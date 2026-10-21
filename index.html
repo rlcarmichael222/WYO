@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Guest information for UW vs. Air Force, Friday, October 23, 2026, War Memorial Stadium, Laramie, Wyoming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Know Before You Go | UW vs. Air Force</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@400;600;800&display=swap">
+<style>
+  /* Layout: full-bleed hero and bands, one centered reading column for guest information.
+     Palette: UW Athletics primary colors. Single committed look, set explicitly. */
+  :root {
+    --wy-brown: #492F24;
+    --wy-gold: #FFC425;
+    --wy-brown-deep: #2E1D16;
+    --wy-paper: #FFFFFF;
+    --wy-bg: #EBECED; /* UW Cool Gray 1 */
+    --wy-ink: #2E1D16;
+    --display: "WYOMING", "Rye", Georgia, serif;
+    --body: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    --header-body: "ROC Grotesk", "Helvetica Neue", Arial, system-ui, sans-serif;
+    --fine: "Calisto MT", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--wy-bg);
+    color: var(--wy-ink);
+    font-family: var(--body);
+    font-weight: 400;
+    line-height: 1.55;
+    font-size: 1.0625rem;
+    text-wrap: pretty;
+  }
+  a { color: var(--wy-brown); font-weight: 700; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--wy-gold); outline-offset: 3px; }
+
+  .hero {
+    position: relative;
+    background: var(--wy-brown) url("assets/steamboat-hero.png") center 42% / min(120%, 900px) auto no-repeat;
+    color: var(--wy-gold);
+    text-align: center;
+    padding: 4.5rem max(16px, env(safe-area-inset-right, 0px)) 3.5rem max(16px, env(safe-area-inset-left, 0px));
+    min-height: 560px;
+    display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(73,47,36,0) 30%, rgba(73,47,36,.92) 78%);
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .eyebrow {
+    font-family: var(--header-body);
+    font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+    font-size: .85rem; color: var(--wy-paper); margin: 0 0 .75rem;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.6rem, 9vw, 5rem); line-height: 1; margin: 0 0 1rem;
+    color: var(--wy-gold); letter-spacing: .02em;
+  }
+  .event { font-family: var(--header-body); font-weight: 700; font-size: clamp(1.05rem, 3.2vw, 1.3rem); color: var(--wy-paper); margin: 0; }
+  .event-meta { font-family: var(--header-body); color: var(--wy-paper); margin: .35rem 0 0; font-size: 1rem; }
+
+  main {
+    max-width: 760px; margin: 0 auto;
+    padding: 2.5rem max(16px, env(safe-area-inset-right, 0px)) 3rem max(16px, env(safe-area-inset-left, 0px));
+  }
+  .intro { font-family: var(--body); font-size: 1.2rem; color: var(--wy-brown); margin: 0 0 2rem; }
+  h2 {
+    font-family: var(--body); font-weight: 800; text-transform: uppercase; color: var(--wy-brown);
+    font-size: 1.75rem; letter-spacing: .02em; margin: 2.25rem 0 .75rem;
+  }
+  h3 { font-family: var(--body); font-weight: 600; font-size: 1.1rem; text-transform: uppercase; letter-spacing: .08em; color: var(--wy-brown); margin: 1.25rem 0 .5rem; }
+
+  .cards { display: grid; gap: .75rem; }
+  details {
+    background: var(--wy-bg); border: 2px solid var(--wy-brown); border-left: 10px solid var(--wy-gold);
+    border-radius: 4px; min-width: 0;
+  }
+  summary {
+    cursor: pointer; list-style: none; padding: 1rem 1.25rem; font-family: var(--body); font-weight: 600; font-size: 1.1rem; color: var(--wy-brown);
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 48px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 1.5rem; line-height: 1; color: var(--wy-brown); }
+  details[open] summary::after { content: "–"; }
+  .card-body { padding: 0 1.25rem 1.1rem; }
+  .card-body p { margin: .5rem 0; }
+  .card-body ul { padding-left: 1.2rem; margin: .5rem 0; }
+
+  .tbd {
+    display: inline-block; background: var(--wy-gold); color: var(--wy-brown-deep);
+    font-weight: 700; padding: 0 .35rem; border-radius: 2px;
+  }
+
+  .glance { display: grid; grid-template-columns: 1fr; gap: .75rem; margin: 0 0 1.5rem; }
+  @media (min-width: 640px) { .glance { grid-template-columns: 1fr 1fr; } }
+  .glance div { background: var(--wy-brown); color: var(--wy-paper); padding: 1rem 1.25rem; border-radius: 4px; min-width: 0; }
+  .glance strong {
+    display: block; color: var(--wy-gold); font-family: var(--body); font-weight: 800;
+    text-transform: uppercase; letter-spacing: .03em; font-size: 1.1rem;
+  }
+  .glance span.time { display: block; font-size: 1.35rem; font-weight: 700; }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .98rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--wy-brown); vertical-align: top; }
+  th { font-family: var(--body); font-weight: 600; text-transform: uppercase; color: var(--wy-brown); letter-spacing: .03em; }
+  td.when { white-space: nowrap; font-weight: 700; color: var(--wy-brown); }
+
+  .callout {
+    background: var(--wy-gold); color: var(--wy-brown-deep); padding: 1rem 1.25rem; border-radius: 4px; margin: 1rem 0;
+  }
+  .callout p { margin: .35rem 0; }
+  .callout strong { color: var(--wy-brown-deep); }
+
+  .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0 .25rem; }
+  .actions a {
+    display: inline-block; background: var(--wy-brown); color: var(--wy-gold); text-decoration: none;
+    padding: .6rem .9rem; border-radius: 4px; min-height: 44px; line-height: 1.3;
+  }
+  .actions a:hover { background: var(--wy-brown-deep); }
+
+  .h-img { display: block; height: 40px; width: auto; max-width: 100%; margin: .25rem 0 .5rem; }
+  .hero-img { height: auto; width: min(100%, 440px); margin: 0 auto; }
+  h2 { margin: 2.25rem 0 .75rem; }
+  main a { color: #183B61; text-decoration: underline; text-underline-offset: 3px; }
+  .forecast-link { color: #183B61; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: .6rem; margin: .75rem 0 .25rem; }
+  .map-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .6rem 1.1rem; background: var(--wy-brown); color: var(--wy-gold); border-radius: 4px; text-decoration: none; font-weight: 700; }
+  .map-btn:hover { background: var(--wy-brown-deep); }
+  .cbtn {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem;
+    min-width: 92px; min-height: 64px; padding: .6rem .75rem; background: var(--wy-brown); color: var(--wy-gold);
+    border: 0; border-radius: 4px; text-decoration: none; font: inherit; font-weight: 600; cursor: pointer;
+  }
+  .cbtn:hover { background: var(--wy-brown-deep); }
+  .num { font-weight: 600; margin: .5rem 0 .25rem; }
+  .hint { min-height: 1.4em; margin: .25rem 0; color: var(--wy-brown-deep); }
+  footer.topo {
+    display: block; height: 150px; background: var(--wy-brown) url("assets/topo-footer.jpg") center / cover no-repeat;
+    border-top: 6px solid var(--wy-gold);
+  }
+  .route { display: grid; gap: .9rem; margin: .5rem 0 .25rem; }
+  .field { display: grid; gap: .35rem; min-width: 0; }
+  .field label { font-weight: 700; color: var(--wy-brown); }
+  .field select, .field input {
+    font: inherit; width: 100%; min-height: 48px; padding: .5rem .75rem;
+    border: 2px solid var(--wy-brown); border-radius: 4px; background: var(--wy-bg); color: var(--wy-ink);
+  }
+  .row { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .row input { flex: 1 1 200px; }
+  .row button {
+    font: inherit; font-weight: 700; min-height: 48px; padding: .5rem .9rem; cursor: pointer;
+    background: var(--wy-gold); color: var(--wy-brown-deep); border: 2px solid var(--wy-brown); border-radius: 4px;
+  }
+  .hint, .leave { font-size: .95rem; margin: .35rem 0; color: var(--wy-brown-deep); }
+  .sms {
+    display: inline-flex; align-items: center; gap: .6rem; margin: .5rem 0; padding: .6rem 1rem;
+    min-height: 48px; background: var(--wy-brown); color: var(--wy-gold); text-decoration: none;
+    border-radius: 4px; font-weight: 700;
+  }
+  .sms:hover { background: var(--wy-brown-deep); }
+  footer {
+    background: var(--wy-brown); color: var(--wy-paper); text-align: center;
+    padding: 2rem max(16px, env(safe-area-inset-right, 0px)) 2.5rem max(16px, env(safe-area-inset-left, 0px));
+    font-family: var(--fine); font-size: .95rem;
+  }
+  footer p { margin: .35rem 0; }
+  footer .small { font-size: .85rem; opacity: .9; }
+  footer a { color: var(--wy-gold); }
+  .notice { font-size: .85rem; opacity: .9; }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">Presented by Tallgrass</p>
+  <h1><img class="h-img hero-img" src="assets/headings/hero-title.png" alt="Know Before You Go"></h1>
+  <p class="event">University of Wyoming Cowboys vs. Air Force Falcons</p>
+  <p class="event-meta">Friday, October 23, 2026 &middot; 7:00 p.m. MDT &middot; War Memorial Stadium &middot; Laramie, Wyoming</p>
+</header>
+
+<main id="main">
+  <p class="intro">Everything you need for a smooth game day, in one place. Tap a section to open it.</p>
+
+  <section aria-labelledby="glance-h">
+    <h2 id="glance-h"><img class="h-img" src="assets/headings/at-a-glance.png" alt="At a Glance"></h2>
+    <div class="glance">
+      <div><strong>Tallgrass tailgate</strong><span class="time">4:30 p.m.</span></div>
+      <div><strong>Kickoff</strong><span class="time">7:00 p.m.</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="quick-h">
+  <h2 id="quick-h"><img class="h-img" src="assets/headings/quick-links.png" alt="Quick Links"></h2>
+  <div class="cards">
+      <details>
+        <summary>Parking &amp; ADA</summary>
+        <div class="card-body">
+          <p><strong>Free general parking:</strong> Located at the Long-Term Lot, Aragon Lot, and UW Annex Lot.</p>
+          <p><strong>Accessible parking:</strong> Free on a first-come, first-served basis with a valid state placard in lots AA, D, S, FA, H, and the Cowboy Field Lot.</p>
+          <p><strong>ADA shuttle:</strong> Operates from the Cowboy Field Lot (off Willett Drive) starting two hours before kickoff and running until 30 minutes after the game ends.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Mobile ticketing</summary>
+        <div class="card-body">
+          <p><strong>Tickets delivered by text</strong></p>
+          <p>You’ll receive tickets via SMS from Rachel Carmichael at <a href="sms:+18327766028">(832) 776-6028</a>. When you tap the link, it opens so you can accept your tickets in the WYO Athletics app.</p>
+          <p><strong>WYO Athletics app</strong></p>
+          <p>You must download the app and log in before accepting the tickets. iPhone: <a href="https://apps.apple.com/us/app/wyo-athletics/id1145965252">App Store</a>. Android: <a href="https://play.google.com/store/apps/details?id=com.wyo.gameday">Google Play</a>.</p>
+          <p><strong>Accepting tickets</strong></p>
+          <p>To accept your tickets, tap the link in the text, tap “Accept Transfer,” and log in or create an account. Then add the tickets to your wallet.</p>
+          <p><strong>To add tickets to your wallet</strong></p>
+          <p>Open the app, select Tickets, then Manage Tickets, and log in. Choose your tickets under My Upcoming Events, tap Add to Wallet under each seat, then tap “Add.”</p>
+          <p>Mobile ticket FAQ: <a href="https://gowyo.com">gowyo.com</a></p>
+        </div>
+      </details>
+      <details>
+        <summary>Clear bag policy &amp; security</summary>
+        <div class="card-body">
+          <p>The University of Wyoming enforces a strict clear bag policy and security protocol for all football games at War Memorial Stadium to improve venue safety and expedite stadium entry. Under these guidelines, traditional large purses, backpacks, and diaper bags are strictly prohibited.</p>
+          <p><strong>Approved bags</strong></p>
+          <p>Every ticket holder, including children, is limited to bringing in one approved clear bag plus one small clutch purse.</p>
+          <ul>
+            <li><strong>Clear plastic totes:</strong> Must be clear plastic, vinyl, or PVC and cannot exceed 12 x 6 x 12 inches. Clear backpacks meeting these dimensions are also permitted.</li>
+            <li><strong>Plastic freezer bags:</strong> A standard one-gallon clear plastic resealable bag (such as a Ziploc bag) is fully approved.</li>
+            <li><strong>Small clutch purses:</strong> A small clutch or wallet is permitted alongside a clear bag, provided it does not exceed 5 x 7 inches.</li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary>Blitz forecast</summary>
+        <div class="card-body">
+          <p>Friday’s forecast for Laramie calls for a <strong>high of 64°</strong> with an overnight <strong>low of 32°</strong>.</p>
+          <p>Afternoon storms are possible, so plan for possible lightning delays. Skies are expected to clear overnight.</p>
+          <p><a class="forecast-link" href="https://www.accuweather.com/en/us/laramie/82070/hourly-weather-forecast/336576">Check the latest weather in Laramie</a></p>
+          <p>Dress in layers for the chilly evening and bring a rain jacket.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Questions? Contact Rachel</summary>
+        <div class="card-body">
+          <p>Have questions? Send a text to Rachel Carmichael.</p>
+          <div class="contact-row">
+            <a class="cbtn" href="sms:+18327766028" aria-label="Text Rachel Carmichael"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg><span>Text</span></a>
+            <a class="cbtn" href="tel:+18327766028" aria-label="Call Rachel Carmichael"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
+            <button type="button" class="cbtn" id="copy-num" aria-label="Copy Rachel’s phone number"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg><span>Copy</span></button>
+          </div>
+          <p class="num">(832) 776-6028</p>
+          <p class="hint" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </details>
+  </div>
+</section>
+
+  <section aria-labelledby="schedule-h">
+  <h2 id="schedule-h"><img class="h-img" src="assets/headings/schedule.png" alt="Schedule"></h2>
+  <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Time</th><th scope="col">What happens</th></tr></thead>
+        <tbody>
+          <tr><td class="when">4:30 p.m.</td><td>The Tallgrass tailgate opens. Enjoy food fresh from our new custom-built BBQ trailer. The ops team serves burgers, hot dogs, and pulled pork sandwiches until it’s time to pack up.</td></tr>
+          <tr><td class="when">5:30 p.m.</td><td>Pregame energy while the Western Thunder Marching Band warms up. Keep an eye out for Cowboy Joe the pony.</td></tr>
+          <tr><td class="when">6:30 p.m.</td><td>Clear bag and ticket check. Put tickets in your phone’s wallet (no screenshots). Make sure your bag meets stadium requirements.</td></tr>
+          <tr><td class="when">6:45 p.m.</td><td>Head to War Memorial Stadium. Arrive by 6:45 p.m.</td></tr>
+          <tr><td class="when">7:00 p.m.</td><td>Kickoff and the firing of the ROTC cannon as the Cowboys take the field under the Friday night lights.</td></tr>
+        </tbody>
+      </table>
+    </div>
+</section>
+
+  <section aria-labelledby="tailgate-h">
+  <h2 id="tailgate-h"><img class="h-img" src="assets/headings/tailgate.png" alt="Tailgate"></h2>
+          <p><strong>4:30 p.m.</strong></p>
+          <p>Make tracks to the new Tallgrass tailgate. Our ops team has a shiny new, custom-built BBQ trailer, and we’re breaking it in with the Cowboys. Select from a burger, hot dog, or pulled pork sandwich, and fill your plate before the Cowboys take the field.</p>
+          <img src="assets/tailgate-map.png" alt="Aerial map of the stadium area showing War Memorial Stadium to the west and the Tallgrass tailgate marker in the lot east of N 22nd St, near Arrowhead Ln." style="max-width:100%;height:auto;display:block;border-radius:4px;margin:.75rem 0">
+          <div class="actions">
+            <a class="map-btn" href="https://maps.app.goo.gl/9mCSbFZCx9SgLABZ9?g_st=ic" target="_blank" rel="noopener">Tailgate location</a>
+          </div>
+</section>
+</main>
+<footer class="topo" aria-hidden="true"></footer>
+<script>
+(function () {
+  var btn = document.getElementById("copy-num");
+  var status = document.getElementById("copy-status");
+  var number = "(832) 776-6028";
+  if (!btn) return;
+
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function report(ok) {
+    status.textContent = ok
+      ? "Number copied."
+      : "Copy did not work on this device. Press and hold the number above to copy it.";
+  }
+
+  btn.addEventListener("click", function () {
+    var canUseApi = navigator.clipboard && window.isSecureContext;
+    if (canUseApi) {
+      navigator.clipboard.writeText(number).then(function () {
+        report(true);
+      }, function () {
+        report(fallbackCopy(number));
+      });
+    } else {
+      report(fallbackCopy(number));
+    }
+  });
+})();
+</script>
+</body>
+</html>
