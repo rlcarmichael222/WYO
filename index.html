@@ -135,6 +135,9 @@
   .contact-row { display: flex; flex-wrap: wrap; gap: .6rem; margin: .75rem 0 .25rem; }
   .map-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .6rem 1.1rem; background: var(--wy-brown); color: var(--wy-gold); border-radius: 4px; text-decoration: none; font-weight: 700; }
   .map-btn:hover { background: var(--wy-brown-deep); }
+  .blackout { background: #000000; color: var(--wy-paper); border-left: 10px solid var(--wy-gold); border-radius: 4px; padding: 1.25rem 1.25rem 1.1rem; margin: 1.5rem 0 0; }
+  .blackout-title { font-family: var(--body); font-weight: 800; font-size: clamp(1.4rem, 4.5vw, 1.8rem); line-height: 1.1; color: var(--wy-gold); margin: 0 0 .5rem; }
+  .blackout p { margin: 0; font-size: 1.1rem; }
   .cbtn {
     display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem;
     min-width: 92px; min-height: 64px; padding: .6rem .75rem; background: var(--wy-brown); color: var(--wy-gold);
@@ -191,22 +194,19 @@
   <section aria-labelledby="glance-h">
     <h2 id="glance-h"><img class="h-img" src="assets/headings/at-a-glance.png" alt="At a Glance"></h2>
     <div class="glance">
-      <div><strong>Tallgrass tailgate</strong><span class="time">4:30 p.m.</span></div>
+      <div><strong>Tallgrass tailgate</strong><span class="time">4:00 p.m.</span></div>
       <div><strong>Kickoff</strong><span class="time">7:00 p.m.</span></div>
     </div>
+  </section>
+
+  <section class="blackout" aria-labelledby="blackout-h">
+    <h2 id="blackout-h" class="blackout-title">Cowboys and Coal: Black Out</h2>
+    <p>Friday night, the Cowboys take the field in special Cowboys &amp; Coal jerseys that honor Wyoming’s coal mining history. Fans are encouraged to wear black and join in the pregame and in-game salutes to the coal mining industry.</p>
   </section>
 
   <section aria-labelledby="quick-h">
   <h2 id="quick-h"><img class="h-img" src="assets/headings/quick-links.png" alt="Quick Links"></h2>
   <div class="cards">
-      <details>
-        <summary>Parking &amp; ADA</summary>
-        <div class="card-body">
-          <p><strong>Free general parking:</strong> Located at the Long-Term Lot, Aragon Lot, and UW Annex Lot.</p>
-          <p><strong>Accessible parking:</strong> Free on a first-come, first-served basis with a valid state placard in lots AA, D, S, FA, H, and the Cowboy Field Lot.</p>
-          <p><strong>ADA shuttle:</strong> Operates from the Cowboy Field Lot (off Willett Drive) starting two hours before kickoff and running until 30 minutes after the game ends.</p>
-        </div>
-      </details>
       <details>
         <summary>Mobile ticketing</summary>
         <div class="card-body">
@@ -219,6 +219,17 @@
           <p><strong>To add tickets to your wallet</strong></p>
           <p>Open the app, select Tickets, then Manage Tickets, and log in. Choose your tickets under My Upcoming Events, tap Add to Wallet under each seat, then tap “Add.”</p>
           <p>Mobile ticket FAQ: <a href="https://gowyo.com">gowyo.com</a></p>
+        </div>
+      </details>
+      <details>
+        <summary>Blitz forecast</summary>
+        <div class="card-body">
+          <p>Friday will be mostly overcast in the morning and at night, with clear skies in the afternoon.</p>
+          <p><strong>Temperature:</strong> Low 39° and high 65°.</p>
+          <p><strong>Precipitation:</strong> 14% chance of rain.</p>
+          <img class="forecast-chart" src="assets/forecast-chart.png" alt="Hourly temperature chart for Friday, October 23. Temperatures rise from the low 40s overnight to the mid-60s in the afternoon, then cool through the evening." style="max-width:100%;height:auto;display:block;border-radius:4px;margin:.5rem 0">
+          <p><a class="forecast-link" href="https://www.accuweather.com/en/us/laramie/82070/hourly-weather-forecast/336576">Check the latest weather in Laramie</a></p>
+          <p>Dress in layers for the chilly evening and bring a rain jacket.</p>
         </div>
       </details>
       <details>
@@ -235,12 +246,11 @@
         </div>
       </details>
       <details>
-        <summary>Blitz forecast</summary>
+        <summary>Parking &amp; ADA</summary>
         <div class="card-body">
-          <p>Friday’s forecast for Laramie calls for a <strong>high of 64°</strong> with an overnight <strong>low of 32°</strong>.</p>
-          <p>Afternoon storms are possible, so plan for possible lightning delays. Skies are expected to clear overnight.</p>
-          <p><a class="forecast-link" href="https://www.accuweather.com/en/us/laramie/82070/hourly-weather-forecast/336576">Check the latest weather in Laramie</a></p>
-          <p>Dress in layers for the chilly evening and bring a rain jacket.</p>
+          <p><strong>Free general parking:</strong> Located at the Long-Term Lot, Aragon Lot, and UW Annex Lot.</p>
+          <p><strong>Accessible parking:</strong> Free on a first-come, first-served basis with a valid state placard in lots AA, D, S, FA, H, and the Cowboy Field Lot.</p>
+          <p><strong>ADA shuttle:</strong> Operates from the Cowboy Field Lot (off Willett Drive) starting two hours before kickoff and running until 30 minutes after the game ends.</p>
         </div>
       </details>
       <details>
@@ -265,7 +275,7 @@
       <table>
         <thead><tr><th scope="col">Time</th><th scope="col">What happens</th></tr></thead>
         <tbody>
-          <tr><td class="when">4:30 p.m.</td><td>The Tallgrass tailgate opens. Enjoy food fresh from our new custom-built BBQ trailer. The ops team serves burgers, hot dogs, and pulled pork sandwiches until it’s time to pack up.</td></tr>
+          <tr><td class="when">4:00 p.m.</td><td>The Tallgrass tailgate opens. Enjoy food fresh from our new custom-built BBQ trailer. The ops team serves burgers, hot dogs, and pulled pork sandwiches until it’s time to pack up.</td></tr>
           <tr><td class="when">5:30 p.m.</td><td>Pregame energy while the Western Thunder Marching Band warms up. Keep an eye out for Cowboy Joe the pony.</td></tr>
           <tr><td class="when">6:30 p.m.</td><td>Clear bag and ticket check. Put tickets in your phone’s wallet (no screenshots). Make sure your bag meets stadium requirements.</td></tr>
           <tr><td class="when">6:45 p.m.</td><td>Head to War Memorial Stadium. Arrive by 6:45 p.m.</td></tr>
@@ -277,7 +287,7 @@
 
   <section aria-labelledby="tailgate-h">
   <h2 id="tailgate-h"><img class="h-img" src="assets/headings/tailgate.png" alt="Tailgate"></h2>
-          <p><strong>4:30 p.m.</strong></p>
+          <p><strong>4:00 p.m.</strong></p>
           <p>Make tracks to the new Tallgrass tailgate. Our ops team has a shiny new, custom-built BBQ trailer, and we’re breaking it in with the Cowboys. Select from a burger, hot dog, or pulled pork sandwich, and fill your plate before the Cowboys take the field.</p>
           <img src="assets/tailgate-map.png" alt="Aerial map of the stadium area showing War Memorial Stadium to the west and the Tallgrass tailgate marker in the lot east of N 22nd St, near Arrowhead Ln." style="max-width:100%;height:auto;display:block;border-radius:4px;margin:.75rem 0">
           <div class="actions">
@@ -286,6 +296,19 @@
 </section>
 </main>
 <footer class="topo" aria-hidden="true"></footer>
+<script>
+(function () {
+  var cards = document.querySelectorAll(".cards details");
+  cards.forEach(function (d) {
+    d.addEventListener("toggle", function () {
+      if (!d.open) return;
+      cards.forEach(function (other) {
+        if (other !== d && other.open) other.open = false;
+      });
+    });
+  });
+})();
+</script>
 <script>
 (function () {
   var btn = document.getElementById("copy-num");
